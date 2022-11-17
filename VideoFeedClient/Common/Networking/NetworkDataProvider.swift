@@ -11,6 +11,7 @@ import Alamofire
 import ObjectMapper
 import BrightFutures
 import MobileCoreServices
+import NotificationBannerSwift
 
 open class NetworkDataProvider {
 
@@ -374,13 +375,27 @@ extension NetworkDataProvider {
             case .notReachable:
                 // Show error state
                 self.notReachable = true
-            case .reachable, .unknown:
+                let banner = NotificationBanner(title: R.string.localizable.lostConnection(), subtitle: "", style: .danger)
+                banner.dismissOnTap = true
+                banner.dismissOnSwipeUp = true
+                banner.autoDismiss = true
+                banner.show()
+            case .reachable(let connection):
                 // Hide error state
+                let banner = NotificationBanner(title: connection == .ethernetOrWiFi ? R.string.localizable.connectedWifi() : R.string.localizable.connectedCellular(), subtitle: "", style: .success)
+
+                banner.dismissOnTap = true
+                banner.dismissOnSwipeUp = true
+                banner.autoDismiss = true
+                banner.show()
+                if self.notReachable {
+                    self.notReachable = false
+                }
+            case .unknown:
                 if self.notReachable {
                     self.notReachable = false
                 }
             }
-
         })
     }
 }

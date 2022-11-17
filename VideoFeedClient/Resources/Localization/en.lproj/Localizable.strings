@@ -8,3 +8,6 @@
 "unknownOwner" = "Unknown Owner";
 "unmute" = "Unmute";
 "mute" = "Mute";
+"connectedWifi" = "Connected via WiFi";
+"connectedCellular" = "Connected via Cellular";
+"lostConnection" = "Lost Connection";

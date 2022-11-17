@@ -10,6 +10,8 @@ def common_pods
   pod 'Kingfisher', '~> 7.0'
   pod 'AARatingBar'
   pod 'VersaPlayer'
+  pod 'ReachabilitySwift'
+  pod 'NotificationBannerSwift', '~> 3.0.0'
 end
 
 target 'VideoFeedClient' do
