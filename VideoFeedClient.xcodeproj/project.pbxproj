@@ -129,7 +129,7 @@
 		8309063F27DD307900A12114 /* TMDBClientUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBClientUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8309065827DD35C300A12114 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8309066327DD3F8F00A12114 /* EnvironmentVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentVars.swift; sourceTree = "<group>"; };
-		8309066527DD406F00A12114 /* TMDBClient.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = TMDBClient.xcconfig; sourceTree = "<group>"; };
+		8309066527DD406F00A12114 /* Client.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Client.xcconfig; sourceTree = "<group>"; };
 		8309066627DD43F000A12114 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		8309066827DD461800A12114 /* NetworkDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDataProvider.swift; sourceTree = "<group>"; };
 		8309066927DD461800A12114 /* PartnersEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartnersEncoding.swift; sourceTree = "<group>"; };
@@ -434,7 +434,7 @@
 		835E95D127DE31E8008FAD8E /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				8309066527DD406F00A12114 /* TMDBClient.xcconfig */,
+				8309066527DD406F00A12114 /* Client.xcconfig */,
 				8309062A27DD307800A12114 /* Info.plist */,
 				8309066327DD3F8F00A12114 /* EnvironmentVars.swift */,
 			);
@@ -910,7 +910,7 @@
 /* Begin XCBuildConfiguration section */
 		8309064127DD307900A12114 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8309066527DD406F00A12114 /* TMDBClient.xcconfig */;
+			baseConfigurationReference = 8309066527DD406F00A12114 /* Client.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -972,7 +972,7 @@
 		};
 		8309064227DD307900A12114 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8309066527DD406F00A12114 /* TMDBClient.xcconfig */;
+			baseConfigurationReference = 8309066527DD406F00A12114 /* Client.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

@@ -1,6 +1,5 @@
 //
 //  MainVC.swift
-//  TMDBClient
 //
 //  Created by Chris on 16.11.2022.
 //
