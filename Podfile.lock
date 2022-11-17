@@ -1,0 +1,48 @@
+PODS:
+  - AARatingBar (1.2)
+  - Alamofire (5.5.0)
+  - BrightFutures (8.1.0)
+  - Kingfisher (7.1.2)
+  - ObjectMapper (4.2.0)
+  - R.swift (6.1.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - SwiftLint (0.45.1)
+  - VersaPlayer (3.0.2)
+
+DEPENDENCIES:
+  - AARatingBar
+  - Alamofire
+  - BrightFutures
+  - Kingfisher (~> 7.0)
+  - ObjectMapper
+  - R.swift
+  - SwiftLint
+  - VersaPlayer
+
+SPEC REPOS:
+  trunk:
+    - AARatingBar
+    - Alamofire
+    - BrightFutures
+    - Kingfisher
+    - ObjectMapper
+    - R.swift
+    - R.swift.Library
+    - SwiftLint
+    - VersaPlayer
+
+SPEC CHECKSUMS:
+  AARatingBar: dc54d24687ae97688ffdb29738332d0bc5c0c09f
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  BrightFutures: 6a974d08b121658dc0e6b93f5dec5353f9c24a44
+  Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  R.swift: ec98ff71c4ab2f6fd01dd077e5afd15e63a4834c
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  SwiftLint: 06ac37e4d38c7068e0935bb30cda95f093bec761
+  VersaPlayer: 0e9a0ea7da786729ffb377dbd17b34641a8265e4
+
+PODFILE CHECKSUM: 44fa7194dc2a9217f14a983fa53e725827ec2881
+
+COCOAPODS: 1.11.3

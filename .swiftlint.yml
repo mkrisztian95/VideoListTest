@@ -1,0 +1,10 @@
+excluded:
+  - Pods
+  - R.generated.swift
+line_length:
+  warning: 300
+  ignores_comments: true
+identifier_name:
+  min_length: 2
+nesting:
+  type_level: 3

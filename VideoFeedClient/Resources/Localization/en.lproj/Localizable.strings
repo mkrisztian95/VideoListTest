@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  VideoClient
+
+  Created by Chris on 16.11.2022.
+  
+*/
+"unknownOwner" = "Unknown Owner";
+"unmute" = "Unmute";
+"mute" = "Mute";

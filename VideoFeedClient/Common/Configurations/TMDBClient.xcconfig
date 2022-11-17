@@ -1,0 +1,18 @@
+//
+//  VideoFeedClient.xcconfig
+//  VideoFeedClient
+//
+//  Created by Chris on 16.11.2022.
+//
+
+// API
+API_VERSION = v1
+API_BASE_URL = api.pexels.com
+
+// APP SETTINGS
+APP_NAME = VideoFeed Client
+APP_BUNDLE_ID = com.app.VideoFeedClient
+SCHEME = VideoFeedClient
+
+// API TOKEN
+API_TOKEN = 563492ad6f91700001000001c93e1e5c93cf48d8bdf26c12b5652fc7
