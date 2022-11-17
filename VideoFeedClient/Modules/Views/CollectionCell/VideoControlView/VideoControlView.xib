@@ -15,28 +15,28 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="WHz-fF-FZd">
-            <rect key="frame" x="0.0" y="0.0" width="358" height="315"/>
+            <rect key="frame" x="0.0" y="0.0" width="517" height="462"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="T2o-Ry-sSO">
-                    <rect key="frame" x="0.0" y="0.0" width="358" height="315"/>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="fGW-ek-mdq">
+                    <rect key="frame" x="240" y="225" width="37" height="37"/>
+                    <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="T2o-Ry-sSO">
+                    <rect key="frame" x="0.0" y="0.0" width="517" height="462"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="grP-Oj-l6k">
-                            <rect key="frame" x="0.0" y="0.0" width="358" height="175"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YbZ-en-OLc" userLabel="Controls View" customClass="VersaPlayerControls" customModule="VersaPlayer">
-                            <rect key="frame" x="0.0" y="175" width="358" height="140"/>
+                            <rect key="frame" x="0.0" y="0.0" width="517" height="462"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XK5-D0-xlL" customClass="VersaTimeLabel" customModule="VersaPlayer">
-                                    <rect key="frame" x="142" y="90" width="70" height="30"/>
+                                    <rect key="frame" x="301" y="399" width="70" height="30"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNC-Nt-V7Q" customClass="VersaStatefulButton" customModule="VersaPlayer">
-                                    <rect key="frame" x="154" y="20" width="50" height="50"/>
+                                    <rect key="frame" x="233.66666666666663" y="329" width="50" height="50"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="50" id="A0R-dX-fIi"/>
                                         <constraint firstAttribute="width" constant="50" id="QG6-dw-xeK"/>
@@ -48,7 +48,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JpA-Rn-iy4" customClass="VersaStatefulButton" customModule="VersaPlayer">
-                                    <rect key="frame" x="276" y="20" width="48" height="50"/>
+                                    <rect key="frame" x="355.66666666666669" y="329" width="48" height="50"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="image" keyPath="activeImage" value="fastforward"/>
@@ -56,11 +56,11 @@
                                     </userDefinedRuntimeAttributes>
                                 </button>
                                 <slider opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="PgB-UL-gaE" customClass="VersaSeekbarSlider" customModule="VersaPlayer">
-                                    <rect key="frame" x="100" y="90" width="32" height="31"/>
+                                    <rect key="frame" x="100" y="399" width="191" height="31"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </slider>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bbq-es-iOK" customClass="VersaStatefulButton" customModule="VersaPlayer">
-                                    <rect key="frame" x="224" y="90" width="30" height="30"/>
+                                    <rect key="frame" x="383" y="399" width="30" height="30"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="bbq-es-iOK" secondAttribute="height" multiplier="1:1" id="whB-Sl-Kea"/>
                                         <constraint firstAttribute="width" constant="30" id="xXh-lF-7D7"/>
@@ -75,7 +75,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mci-cj-Gp0" customClass="VersaStatefulButton" customModule="VersaPlayer">
-                                    <rect key="frame" x="216" y="20" width="48" height="50"/>
+                                    <rect key="frame" x="295.66666666666669" y="329" width="48" height="50"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="image" keyPath="activeImage" value="skipForward"/>
@@ -83,7 +83,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vk3-JZ-eWs" customClass="VersaStatefulButton" customModule="VersaPlayer">
-                                    <rect key="frame" x="34" y="20" width="48" height="50"/>
+                                    <rect key="frame" x="113.66666666666669" y="329" width="48" height="50"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="image" keyPath="activeImage" value="rewind"/>
@@ -91,11 +91,11 @@
                                     </userDefinedRuntimeAttributes>
                                 </button>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgs-1A-nq3">
-                                    <rect key="frame" x="308" y="90" width="30" height="30"/>
+                                    <rect key="frame" x="467" y="399" width="30" height="30"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83P-gi-o0S" customClass="VersaStatefulButton" customModule="VersaPlayer">
-                                    <rect key="frame" x="94" y="20" width="48" height="50"/>
+                                    <rect key="frame" x="173.66666666666666" y="329" width="48" height="50"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="image" keyPath="activeImage" value="skipBackward"/>
@@ -103,7 +103,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMh-xs-XaP" customClass="VersaTimeLabel" customModule="VersaPlayer">
-                                    <rect key="frame" x="20" y="90" width="70" height="30"/>
+                                    <rect key="frame" x="20" y="399" width="70" height="30"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="IGC-3H-hAe"/>
@@ -113,7 +113,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ne-ik-JA9" customClass="VersaStatefulButton" customModule="VersaPlayer">
-                                    <rect key="frame" x="266" y="90" width="30" height="30"/>
+                                    <rect key="frame" x="425" y="399" width="30" height="30"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="6ne-ik-JA9" secondAttribute="height" multiplier="1:1" id="GNv-gH-JMR"/>
                                     </constraints>
@@ -134,37 +134,46 @@
                                 <constraint firstItem="bbq-es-iOK" firstAttribute="top" secondItem="6ne-ik-JA9" secondAttribute="top" id="3hV-Gp-C7I"/>
                                 <constraint firstItem="83P-gi-o0S" firstAttribute="leading" secondItem="vk3-JZ-eWs" secondAttribute="trailing" constant="12" id="3wl-Xn-cWu"/>
                                 <constraint firstItem="JpA-Rn-iy4" firstAttribute="top" secondItem="Mci-cj-Gp0" secondAttribute="top" id="4wG-Qu-PoR"/>
-                                <constraint firstItem="PgB-UL-gaE" firstAttribute="top" secondItem="jNC-Nt-V7Q" secondAttribute="bottom" constant="20" id="6EN-f3-8x0"/>
-                                <constraint firstAttribute="height" constant="140" id="7Sy-fp-30h"/>
                                 <constraint firstItem="jNC-Nt-V7Q" firstAttribute="centerX" secondItem="YbZ-en-OLc" secondAttribute="centerX" id="9pM-v7-eqV"/>
                                 <constraint firstItem="6ne-ik-JA9" firstAttribute="width" secondItem="bbq-es-iOK" secondAttribute="width" id="9sc-bD-qsO"/>
                                 <constraint firstItem="83P-gi-o0S" firstAttribute="bottom" secondItem="jNC-Nt-V7Q" secondAttribute="bottom" id="AcX-Wi-Tw5"/>
                                 <constraint firstItem="JpA-Rn-iy4" firstAttribute="leading" secondItem="Mci-cj-Gp0" secondAttribute="trailing" constant="12" id="B0H-Ek-bRz"/>
+                                <constraint firstAttribute="bottom" secondItem="PgB-UL-gaE" secondAttribute="bottom" constant="33" id="Bef-EE-h6W"/>
                                 <constraint firstItem="vk3-JZ-eWs" firstAttribute="top" secondItem="83P-gi-o0S" secondAttribute="top" id="BlQ-lq-9eN"/>
                                 <constraint firstItem="CMh-xs-XaP" firstAttribute="baseline" secondItem="XK5-D0-xlL" secondAttribute="baseline" id="EAn-Sn-Y1t"/>
                                 <constraint firstItem="PgB-UL-gaE" firstAttribute="bottom" secondItem="CMh-xs-XaP" secondAttribute="bottom" id="ELu-G0-oxS"/>
-                                <constraint firstItem="vk3-JZ-eWs" firstAttribute="top" secondItem="YbZ-en-OLc" secondAttribute="top" constant="20" id="Eht-Kp-oQX"/>
+                                <constraint firstItem="PgB-UL-gaE" firstAttribute="top" secondItem="83P-gi-o0S" secondAttribute="bottom" constant="20" id="JLC-9h-e9W"/>
                                 <constraint firstItem="XK5-D0-xlL" firstAttribute="height" secondItem="PgB-UL-gaE" secondAttribute="height" id="NJl-2V-XpX"/>
+                                <constraint firstItem="PgB-UL-gaE" firstAttribute="top" secondItem="jNC-Nt-V7Q" secondAttribute="bottom" constant="20" id="Ohv-Bs-Tl3"/>
                                 <constraint firstItem="Mci-cj-Gp0" firstAttribute="leading" secondItem="jNC-Nt-V7Q" secondAttribute="trailing" constant="12" id="Qat-vo-P7I"/>
+                                <constraint firstAttribute="bottom" secondItem="bbq-es-iOK" secondAttribute="bottom" constant="33" id="TVm-wB-IOF"/>
                                 <constraint firstItem="83P-gi-o0S" firstAttribute="top" secondItem="jNC-Nt-V7Q" secondAttribute="top" id="UVA-Tw-WPW"/>
+                                <constraint firstItem="XK5-D0-xlL" firstAttribute="top" secondItem="JpA-Rn-iy4" secondAttribute="bottom" constant="20" id="ZLj-r0-kWW"/>
+                                <constraint firstAttribute="bottom" secondItem="zgs-1A-nq3" secondAttribute="bottom" constant="33" id="bxZ-bA-6K7"/>
                                 <constraint firstItem="6ne-ik-JA9" firstAttribute="leading" secondItem="bbq-es-iOK" secondAttribute="trailing" constant="12" id="c0L-1h-cJO"/>
                                 <constraint firstItem="zgs-1A-nq3" firstAttribute="width" secondItem="6ne-ik-JA9" secondAttribute="width" id="cEY-Be-3bv"/>
                                 <constraint firstItem="Mci-cj-Gp0" firstAttribute="top" secondItem="jNC-Nt-V7Q" secondAttribute="top" id="hw0-At-vwb"/>
                                 <constraint firstItem="zgs-1A-nq3" firstAttribute="leading" secondItem="6ne-ik-JA9" secondAttribute="trailing" constant="12" id="iZV-xY-7et"/>
+                                <constraint firstItem="PgB-UL-gaE" firstAttribute="top" secondItem="vk3-JZ-eWs" secondAttribute="bottom" constant="20" id="j4l-gm-RgB"/>
                                 <constraint firstItem="jNC-Nt-V7Q" firstAttribute="leading" secondItem="83P-gi-o0S" secondAttribute="trailing" constant="12" id="jm6-82-sEa"/>
                                 <constraint firstItem="6ne-ik-JA9" firstAttribute="bottom" secondItem="XK5-D0-xlL" secondAttribute="bottom" id="lrM-LT-KIH"/>
+                                <constraint firstItem="XK5-D0-xlL" firstAttribute="top" secondItem="Mci-cj-Gp0" secondAttribute="bottom" constant="20" id="mm7-Ja-5Xp"/>
                                 <constraint firstItem="CMh-xs-XaP" firstAttribute="height" secondItem="PgB-UL-gaE" secondAttribute="height" id="mpF-oQ-UmE"/>
                                 <constraint firstItem="zgs-1A-nq3" firstAttribute="bottom" secondItem="6ne-ik-JA9" secondAttribute="bottom" id="n1O-9D-gvU"/>
+                                <constraint firstAttribute="bottom" secondItem="6ne-ik-JA9" secondAttribute="bottom" constant="33" id="oRl-p2-iHw"/>
                                 <constraint firstAttribute="trailing" secondItem="zgs-1A-nq3" secondAttribute="trailing" constant="20" id="oSk-VO-5X7"/>
                                 <constraint firstItem="vk3-JZ-eWs" firstAttribute="bottom" secondItem="83P-gi-o0S" secondAttribute="bottom" id="ouF-1r-S8o"/>
+                                <constraint firstAttribute="bottom" secondItem="CMh-xs-XaP" secondAttribute="bottom" constant="33" id="p49-Wi-piV"/>
                                 <constraint firstItem="bbq-es-iOK" firstAttribute="leading" secondItem="XK5-D0-xlL" secondAttribute="trailing" constant="12" id="p6c-Ol-rxB"/>
                                 <constraint firstItem="6ne-ik-JA9" firstAttribute="top" secondItem="XK5-D0-xlL" secondAttribute="top" id="pIH-rF-tXI"/>
                                 <constraint firstItem="bbq-es-iOK" firstAttribute="bottom" secondItem="6ne-ik-JA9" secondAttribute="bottom" id="qXQ-nT-ae6"/>
+                                <constraint firstAttribute="bottom" secondItem="XK5-D0-xlL" secondAttribute="bottom" constant="33" id="rI6-kf-S38"/>
                                 <constraint firstItem="CMh-xs-XaP" firstAttribute="leading" secondItem="YbZ-en-OLc" secondAttribute="leading" constant="20" id="vUT-Ke-WnD"/>
                                 <constraint firstItem="zgs-1A-nq3" firstAttribute="top" secondItem="6ne-ik-JA9" secondAttribute="top" id="xat-Dd-26p"/>
                                 <constraint firstItem="PgB-UL-gaE" firstAttribute="leading" secondItem="CMh-xs-XaP" secondAttribute="trailing" constant="12" id="xeT-PC-PHd"/>
                                 <constraint firstItem="JpA-Rn-iy4" firstAttribute="bottom" secondItem="Mci-cj-Gp0" secondAttribute="bottom" id="xfN-lU-rrD"/>
                                 <constraint firstItem="Mci-cj-Gp0" firstAttribute="bottom" secondItem="jNC-Nt-V7Q" secondAttribute="bottom" id="yvJ-Li-YZw"/>
+                                <constraint firstItem="PgB-UL-gaE" firstAttribute="top" secondItem="jNC-Nt-V7Q" secondAttribute="bottom" constant="20" id="zXB-e3-pHk"/>
                             </constraints>
                             <connections>
                                 <outlet property="airplayContainer" destination="zgs-1A-nq3" id="LKg-Fp-JC7"/>
@@ -183,26 +192,25 @@
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="YbZ-en-OLc" secondAttribute="bottom" id="AzV-hl-4RH"/>
+                    </constraints>
                 </stackView>
-                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="fGW-ek-mdq">
-                    <rect key="frame" x="160.66666666666666" y="168.66666666666666" width="37" height="37"/>
-                    <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="XKi-q9-i7B"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="T2o-Ry-sSO" secondAttribute="bottom" id="1Zf-Vl-3lM"/>
-                <constraint firstItem="T2o-Ry-sSO" firstAttribute="top" secondItem="WHz-fF-FZd" secondAttribute="top" id="EG6-rO-YhA"/>
-                <constraint firstItem="T2o-Ry-sSO" firstAttribute="leading" secondItem="WHz-fF-FZd" secondAttribute="leading" id="EdG-7E-aUg"/>
-                <constraint firstAttribute="trailing" secondItem="T2o-Ry-sSO" secondAttribute="trailing" id="Suy-XG-JdM"/>
+                <constraint firstItem="T2o-Ry-sSO" firstAttribute="leading" secondItem="XKi-q9-i7B" secondAttribute="leading" id="5sB-eo-Hkg"/>
+                <constraint firstItem="T2o-Ry-sSO" firstAttribute="top" secondItem="WHz-fF-FZd" secondAttribute="top" id="AfX-tR-rwP"/>
+                <constraint firstAttribute="bottom" secondItem="T2o-Ry-sSO" secondAttribute="bottom" id="Rdg-C3-aIS"/>
+                <constraint firstItem="T2o-Ry-sSO" firstAttribute="trailing" secondItem="XKi-q9-i7B" secondAttribute="trailing" id="euk-sH-YfA"/>
                 <constraint firstItem="fGW-ek-mdq" firstAttribute="centerX" secondItem="XKi-q9-i7B" secondAttribute="centerX" id="k1A-mF-Ev1"/>
                 <constraint firstItem="fGW-ek-mdq" firstAttribute="centerY" secondItem="XKi-q9-i7B" secondAttribute="centerY" id="vCc-bK-D2k"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="47" y="-274"/>
+            <point key="canvasLocation" x="-80.152671755725194" y="-285.21126760563379"/>
         </view>
     </objects>
     <designables>

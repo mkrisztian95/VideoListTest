@@ -366,6 +366,14 @@ extension NetworkDataProvider {
 
 // MARK: 
 extension NetworkDataProvider {
+    func showReachabilityMessage(title: String?, style:BannerStyle) {
+        let banner = FloatingNotificationBanner(title: title, style: style)
+        banner.dismissOnTap = true
+        banner.dismissOnSwipeUp = true
+        banner.autoDismiss = true
+        banner.show()
+    }
+
     func listenForReachability() {
         self.reachabilityManager?.startListening(onUpdatePerforming: {networkStatusListener in
 
@@ -375,19 +383,10 @@ extension NetworkDataProvider {
             case .notReachable:
                 // Show error state
                 self.notReachable = true
-                let banner = NotificationBanner(title: R.string.localizable.lostConnection(), subtitle: "", style: .danger)
-                banner.dismissOnTap = true
-                banner.dismissOnSwipeUp = true
-                banner.autoDismiss = true
-                banner.show()
+                self.showReachabilityMessage(title: R.string.localizable.lostConnection(), style: .danger)
             case .reachable(let connection):
                 // Hide error state
-                let banner = NotificationBanner(title: connection == .ethernetOrWiFi ? R.string.localizable.connectedWifi() : R.string.localizable.connectedCellular(), subtitle: "", style: .success)
-
-                banner.dismissOnTap = true
-                banner.dismissOnSwipeUp = true
-                banner.autoDismiss = true
-                banner.show()
+                self.showReachabilityMessage(title: connection == .ethernetOrWiFi ? R.string.localizable.connectedWifi() : R.string.localizable.connectedCellular(), style: .success)
                 if self.notReachable {
                     self.notReachable = false
                 }

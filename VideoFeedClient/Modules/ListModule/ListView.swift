@@ -7,7 +7,6 @@
 
 import UIKit
 import Reachability
-import NotificationBannerSwift
 
 protocol ListViewActions: BaseView {
     func setState()
@@ -34,6 +33,7 @@ class ListView: UIViewController {
 
     // MARK: - Public Properties
     public var indexOfCellBeforeDragging = 0
+    
     // MARK: - public properties
     var presenter: ListAction!
 
